@@ -28,7 +28,7 @@ public class App {
         URL webRootLocation = App.class.getResource("/webapp/");
         URI webRootUri = webRootLocation.toURI();
 
-        WebAppContext context = new WebAppCont`ext();
+        WebAppContext context = new WebAppContext();
         context.setBaseResource(Resource.newResource(webRootUri));
         context.setContextPath("/");
         context.setAttribute("org.eclipse.jetty.server.webapp.ContainerIncludeJarPattern", ".*");
