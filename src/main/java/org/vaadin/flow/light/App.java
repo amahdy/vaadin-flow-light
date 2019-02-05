@@ -23,27 +23,27 @@ import org.eclipse.jetty.webapp.WebXmlConfiguration;
  */
 public class App {
 
+    public static final String JAR_PATTERN = "org.eclipse.jetty.server.webapp.ContainerIncludeJarPattern";
+    public static final String PRODUCTION_MODE = "productionMode";
+    public static final String ORIGINAL_FRONTEND_RESOURCES = "original.frontend.resources";
+
     public static void main(String[] args) throws Exception {
 
         URL webRootLocation = App.class.getResource("/webapp/");
         URI webRootUri = webRootLocation.toURI();
 
-        WebAppContext context = new WebAppCont`ext();
+        WebAppContext context = new WebAppContext();
         context.setBaseResource(Resource.newResource(webRootUri));
         context.setContextPath("/");
-        context.setAttribute("org.eclipse.jetty.server.webapp.ContainerIncludeJarPattern", ".*");
+        context.setAttribute(JAR_PATTERN , ".*");
         context.setConfigurationDiscovered(true);
-        context.setInitParameter("productionMode", "true");
-        context.setInitParameter("original.frontend.resources", "true");
+        context.setInitParameter(PRODUCTION_MODE , "true");
+        context.setInitParameter(ORIGINAL_FRONTEND_RESOURCES , "true");
         context.setConfigurations(new Configuration[]{
                 new AnnotationConfiguration(),
                 new WebInfConfiguration(),
                 new WebXmlConfiguration(),
-                new MetaInfConfiguration(),
-                new FragmentConfiguration(),
-                new EnvConfiguration(),
-                new PlusConfiguration(),
-                new JettyWebXmlConfiguration()
+                new MetaInfConfiguration()
         });
         context.getServletContext().setExtendedListenerTypes(true);
         context.addEventListener(new ServletContextListeners());
