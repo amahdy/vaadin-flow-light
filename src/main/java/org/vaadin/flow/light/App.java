@@ -20,8 +20,6 @@ import org.eclipse.jetty.webapp.WebXmlConfiguration;
 public class App {
 
     public static final String JAR_PATTERN = "org.eclipse.jetty.server.webapp.ContainerIncludeJarPattern";
-    public static final String PRODUCTION_MODE = "productionMode";
-    public static final String ORIGINAL_FRONTEND_RESOURCES = "original.frontend.resources";
 
     public static void main(String[] args) throws Exception {
 
@@ -33,8 +31,6 @@ public class App {
         context.setContextPath("/");
         context.setAttribute(JAR_PATTERN , ".*");
         context.setConfigurationDiscovered(true);
-        context.setInitParameter(PRODUCTION_MODE , "true");
-        context.setInitParameter(ORIGINAL_FRONTEND_RESOURCES , "true");
         context.setConfigurations(new Configuration[]{
                 new AnnotationConfiguration(),
                 new WebInfConfiguration(),
