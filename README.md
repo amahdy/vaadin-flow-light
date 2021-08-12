@@ -1,6 +1,6 @@
 # Vaadin Light
 
-Minimal Standalone Vaadin Flow Application Jar with Maven (~ 21.2MB).
+Minimal Standalone Vaadin Flow Application Jar with Maven (~ 19.3MB).
 
 ## Compiling
 
