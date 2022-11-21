@@ -56,7 +56,7 @@
     "webpack": "4.42.0",
     "webpack-babel-multi-target-plugin": "2.3.3",
     "webpack-cli": "3.3.11",
-    "webpack-dev-server": "3.11.0",
+    "webpack-dev-server": "3.11.3",
     "webpack-merge": "4.2.2"
   },
   "license": "UNLICENSED",
@@ -127,7 +127,7 @@
       "webpack": "4.42.0",
       "webpack-babel-multi-target-plugin": "2.3.3",
       "webpack-cli": "3.3.11",
-      "webpack-dev-server": "3.11.0",
+      "webpack-dev-server": "3.11.3",
       "webpack-merge": "4.2.2"
     },
     "hash": "b41fb2a007a53f25cfc53c64090717bbf77c0edf95bc045bca5a666e22841a97"
