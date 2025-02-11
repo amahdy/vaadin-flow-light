@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "chokidar": "^3.5.0",
-    "compression-webpack-plugin": "4.0.1",
+    "compression-webpack-plugin": "11.1.0",
     "construct-style-sheets-polyfill": "2.4.6",
     "copy-webpack-plugin": "11.0.0",
     "css-loader": "6.8.1",
@@ -113,7 +113,7 @@
     },
     "devDependencies": {
       "chokidar": "^3.5.0",
-      "compression-webpack-plugin": "4.0.1",
+      "compression-webpack-plugin": "11.1.0",
       "construct-style-sheets-polyfill": "2.4.6",
       "copy-webpack-plugin": "11.0.0",
       "css-loader": "6.8.1",
